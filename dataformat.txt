@@ -1,0 +1,64 @@
+﻿# Items format is name, value, -1, -1 (-1, -1 is location)
+# Monsters format:  name, hp, maxhp, ac, str, dex, con, int, wis, cha, noattacks, experience
+#    nomeleeattacks
+#    name, tohit, damage, damagetype (repeat)
+#    norangedattacks
+#    name, tohit, damage, damagetype, range (repeat)
+#    noinventory
+#    name, value, -1, -1 (repeat)
+# Character format is same as monsters format except no experience and adds xp, level
+# Where a name would have a space, use an underscore, like Young_Green_Dragon
+#
+# Items list (just gold for now):
+Gold,12,-1,-1
+Gold,6,-1,-1
+Gold,9,-1,-1
+Gold,3,-1,-1
+Gold,11,-1,-1
+Gold,5,-1,-1
+Gold,8,-1,-1
+Gold,2,-1,-1
+Gold,10,-1,-1
+Gold,4,-1,-1
+Gold,7,-1,-1
+Gold,1,-1,-1
+#
+# Monsters list:
+Kobold,5,5,12,7,15,9,8,7,8,1,25
+  1
+  Dagger,4,1d4+2,piercing
+  1
+  Sling,4,1d4+2,bludgeoning,120
+  0
+Goblin,7,7,15,8,14,10,10,8,8,1,50
+  1
+  Scimitar,4,1d6+2,slashing
+  1
+  Shortbow,4,1d6+2,piercing,320
+  0
+Skeleton,13,13,13,10,14,15,6,8,5,1,50
+  1
+  Short_Sword,4,1d6+2,piercing
+  1
+  Shortbow,4,1d6+2,piercing,320
+  0
+Zombie,22,22,8,13,6,16,3,6,5,1,50
+  1
+  Slam,3,1d6+1,bludgeoning
+  0
+  0
+Orc,15,15,13,16,12,16,7,11,10,1,100
+  1
+  Greataxe,5,1d12+3,slashing
+  1
+  Javelin,5,1d6+3,piercing,120
+  1
+  Gold,3,-1,-1
+#
+# Character definition:
+Player,13,13,15,13,13,13,13,13,13,1,0,1
+  2
+  Punch,0,1d3,bludgeoning
+  Kick,0,1d3,bludgeoning
+  0
+  0
